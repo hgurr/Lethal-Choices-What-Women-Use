@@ -7,7 +7,7 @@
 ##   and analyzes cases involving female perpetrators. The script
 ##   generates one-way and two-way frequency tables, as well as
 ##   one-way and two-way proportion frequency tables.
-## Input:  HomicideSample.csv
+## Input:  homicide_sample.csv
 ## Output: One-way and two-way, and proportion frequency tables
 ########################################################################
 
@@ -21,7 +21,7 @@ library(dplyr)
 library(tidyr)
 
 # Import and Explore Dataset #
-homicide <- read_csv("HomicideSample.csv")
+homicide <- read_csv("homicide_sample.csv")
 # Quick Data Overview
 str(homicide)
 head(homicide)
@@ -32,7 +32,7 @@ head(homicide)
 # Define Variables of Interest (2) #
 # 1. "Perpetrator.Sex" - Sex of perpetrator
 # 2. "Weapon" - Type of weapon used
-# 3. "nonfirearm" - Subset of Weapons for non-firearm weapons only (created)
+# 3. "nonfirearm" - Subset of "Weapon" using only non-firearm weapons (filtered dataset frame)
 
 # One-Way Table: Perpetrator Sex (4) #
 table(homicide$Perpetrator.Sex)
