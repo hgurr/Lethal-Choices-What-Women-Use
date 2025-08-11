@@ -8,7 +8,7 @@
 ##   generates one-way and two-way frequency tables, as well as
 ##   one-way and two-way proportion frequency tables.
 ## Input:  HomicideSample.csv
-## Output: One-way and two-way tables, and proportion frequency tables
+## Output: One-way and two-way, and proportion frequency tables
 ########################################################################
 
 # Set Working Directory #
