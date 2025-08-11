@@ -40,7 +40,7 @@ table(homicide$Perpetrator.Sex)
 # One-Way Proportion Frequency Table (4) #
 prop.table(table(homicide$Perpetrator.Sex))
 
-# Filter and Explore Dataset: Non-Firearm Weapons Only #
+# Filter Dataset Frame: Non-Firearm Weapons Only #
 nonfirearm <- filter(homicide, Weapon == "Blunt Object" | Weapon == "Drowning"|
                        Weapon == "Drugs" | Weapon == "Explosives" |
                        Weapon == "Fall" | Weapon == "Fire" | Weapon == "Knife" |
