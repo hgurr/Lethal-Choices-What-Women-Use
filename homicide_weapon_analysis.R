@@ -1,12 +1,19 @@
 ########################################################################
-## Title: Homicide Weapon Analysis - Non-Firearm Use by Female Perpetrators in the U.S.
+## Title: Non-Firearm Weapon Use by Female Homicide Perpetrators in the U.S.
 ## Author: https://github.com/hgurr
 ## Date: 02-17-2024
 ## Description:
-##   Analyzes homicide data to explore patterns of non-firearm weapon use
-##   by female perpetrators in the United States. Generates frequency and proportion
-##   tables to identify the most commonly used non-firearm weapons
-##   based on the homicide_sample.csv dataset.
+##   Analyzes U.S. homicide data to explore the types of non-firearm weapons 
+##   used by female perpetrators. The analysis includes:
+##     1) Frequency distribution of perpetrator sex
+##     2) Identification of common non-firearm weapons
+##     3) Cross-tabulation and proportion of weapon use by sex
+##
+##   The script filters the dataset to include only non-firearm weapons and
+##   creates frequency and proportion tables to highlight patterns in weapon 
+##   selection among female offenders.
+##
+##   Based on: homicide_sample.csv dataset.
 ########################################################################
 
 # Set Working Directory #
