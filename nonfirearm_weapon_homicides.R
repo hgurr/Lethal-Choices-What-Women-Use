@@ -1,14 +1,10 @@
 ########################################################################
-## Title: Non-Firearm Weapons Used by Women in the United States
-## Author: Hallie Gurr
-## Date: 02-11-2024
+## Title: Homicide Weapon Analysis - Non-Firearm Use by Female Perpetrators in the U.S.
+## Author: https://github.com/hgurr
+## Date: 02-17-2024
 ## Description:
-##   Reads in homicide sample data, filters for non-firearm weapons,
-##   and analyzes cases involving female perpetrators. The script
-##   generates one-way and two-way frequency tables, as well as
-##   one-way and two-way proportion frequency tables.
-## Input:  homicide_sample.csv
-## Output: One-way and two-way, and proportion frequency tables
+## Summary:   Generates frequency tables to explore non-firearm weapon use 
+##            by female perpetrators using homicide_sample.csv.
 ########################################################################
 
 # Set Working Directory #
@@ -26,18 +22,18 @@ homicide <- read_csv("homicide_sample.csv")
 str(homicide)
 head(homicide)
 
-# Research Question (1) # 
-# What type of non-firearm weapon is a woman in the United States most likely to use to commit homicide?
+# Research Question # 
+# What type of non-firearm weapon is most commonly used by women to commit homicide in the United States?
 
-# Define Variables of Interest (2) #
+# Define Variables of Interest #
 # 1. "Perpetrator.Sex" - Sex of perpetrator
 # 2. "Weapon" - Type of weapon used
 # 3. "nonfirearm" - Subset of "Weapon" using only non-firearm weapons (filtered dataset frame)
 
-# One-Way Table: Perpetrator Sex (4) #
+# One-Way Table: Perpetrator Sex #
 table(homicide$Perpetrator.Sex)
 
-# One-Way Proportion Frequency Table (4) #
+# One-Way Proportion Frequency Table #
 prop.table(table(homicide$Perpetrator.Sex))
 
 # Filter Dataset Frame: Non-Firearm Weapons Only #
@@ -47,8 +43,8 @@ nonfirearm <- filter(homicide, Weapon == "Blunt Object" | Weapon == "Drowning"|
                        Weapon == "Poison" | Weapon == "Strangulation" |
                        Weapon == "Suffocation")
 
-# Two-Way Table: Non-Firearm Weapon by Perpetrator Sex (6) #
+# Two-Way Table: Non-Firearm Weapon by Perpetrator Sex #
 table(nonfirearm$Weapon, nonfirearm$Perpetrator.Sex)
 
-# Two-Way Proportion Frequency Table (By Column): Non-Firearm Weapon by Perpetrator Sex (6) #
+# Two-Way Proportion Frequency Table (By Column): Non-Firearm Weapon by Perpetrator Sex #
 prop.table(table(nonfirearm$Weapon, nonfirearm$Perpetrator.Sex), 2)
