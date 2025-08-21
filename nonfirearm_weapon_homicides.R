@@ -3,9 +3,12 @@
 ## Author: https://github.com/hgurr
 ## Date: 02-17-2024
 ## Description:
-## Summary:   Generates frequency tables to explore non-firearm weapon use 
-##            by female perpetrators using homicide_sample.csv.
+##   Analyzes homicide data to explore patterns of non-firearm weapon use
+##   by female perpetrators in the United States. Generates frequency and proportion
+##   tables to identify the most commonly used non-firearm weapons
+##   based on the homicide_sample.csv dataset.
 ########################################################################
+
 
 # Set Working Directory #
 setwd("C:/Users/...") # Replace the content within the quotes with your selected working directory
