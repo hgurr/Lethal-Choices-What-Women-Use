@@ -35,13 +35,14 @@ The analysis was conducted in R and focuses on summarizing categorical variables
 ### Key Variables:
 - `Perpetrator.Sex`
 - `Weapon`
+- `nonfirearm` (created subset of `homicide_sample.csv`)
 
 ### Filtering Criteria:
 To focus on non-firearm homicides, the dataset was filtered to **exclude**:
-- `"Gun"`, `"Firearm"`, `"Handgun"`, `"Rifle"`, `"Shotgun"`, `"Unknown"`
+- `Gun`, `Firearm`, `Handgun`, `Rifle`, `Shotgun`, `Unknown`
 
 Only the following non-firearm weapons were **included**:
-- `"Knife"`, `"Blunt Object"`, `"Poison"`, `"Fire"`, `"Drugs"`, `"Strangulation"`, `"Suffocation"`, `"Drowning"`, `"Explosives"`, `"Fall"`
+- `Knife`, `Blunt Object`, `Poison`, `Fire`, `Drugs`, `Strangulation`, `Suffocation`, `Drowning`, `Explosives`, `Fall`
 
 ---
 
