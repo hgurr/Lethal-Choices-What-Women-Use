@@ -101,7 +101,7 @@ Only the following non-firearm weapons were **included**:
 ## Conclusion
 
 - The hypothesis that **knives are the most likely non-firearm weapon used by women** was confirmed.
-- Knives were involved in **1,397 of 2,319** non-firearm female-perpetrated homicides.
+- Knives were involved in **1,397 of 2,319** (or **60.24%**) non-firearm female-perpetrated homicides.
 - Potential factors behind this trend:
   - **Accessibility**: Knives are common household items.
   - **Familiarity**: Most people use knives regularly.
