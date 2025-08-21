@@ -1,4 +1,4 @@
-# Homicide Weapon Analysis — Non-Firearm Use by Female Perpetrators in the U.S.
+# Non-Firearm Weapon Use by Female Homicide Perpetrators in the U.S.
 
 ## Abstract
 - **Research Question**: What type of non-firearm weapon is most commonly used by women to commit homicide in the United States?
@@ -140,7 +140,7 @@ With additional data, future exploration could include:
    git clone https://github.com/hgurr/homicide-weapon-analysis.git
    cd homicide-weapon-analysis
 
-3. **Open `nonfirearm_weapon_homicides.R` in RStudio**
+3. **Open `homicide_weapon_analysis.R` in RStudio**
 
 4. **Install Required Packages**
    ```bash
@@ -156,7 +156,7 @@ Ensure homicide_sample.csv is in your working directory.
 ## Project Structure
    ```bash
 homicide-weapon-analysis/
-├── nonfirearm_weapon_homicides.R      # Main R analysis script
+├── homicide_weapon_analysis.R         # Main R analysis script
 ├── homicide_sample.csv                # Dataset
 ├── homicide_sample_codebook.pdf       # Dataset codebook
 └── README.md                          # Documentation and summary
