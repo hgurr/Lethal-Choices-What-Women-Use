@@ -9,7 +9,6 @@
 ##   based on the homicide_sample.csv dataset.
 ########################################################################
 
-
 # Set Working Directory #
 setwd("C:/Users/...") # Replace the content within the quotes with your selected working directory
 getwd()
