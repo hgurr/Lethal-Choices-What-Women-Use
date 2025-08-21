@@ -1,4 +1,4 @@
-# Homicide Weapon Analysis: Non-Firearm Use by Female Perpetrators in the U.S.
+# Homicide Weapon Analysis — Non-Firearm Use by Female Perpetrators in the U.S.
 
 ## Abstract
 - **Research Question**: What type of non-firearm weapon is most commonly used by women to commit homicide in the United States?
