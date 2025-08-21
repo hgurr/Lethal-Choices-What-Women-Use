@@ -39,11 +39,9 @@ table(homicide$Perpetrator.Sex)
 prop.table(table(homicide$Perpetrator.Sex))
 
 # Filter Dataset Frame: Non-Firearm Weapons Only #
-nonfirearm <- filter(homicide, Weapon == "Blunt Object" | Weapon == "Drowning"|
-                       Weapon == "Drugs" | Weapon == "Explosives" |
-                       Weapon == "Fall" | Weapon == "Fire" | Weapon == "Knife" |
-                       Weapon == "Poison" | Weapon == "Strangulation" |
-                       Weapon == "Suffocation")
+nonfirearm <- filter(homicide, Weapon == "Blunt Object" | Weapon == "Drowning"| Weapon == "Drugs" | 
+                     Weapon == "Explosives" | Weapon == "Fall" | Weapon == "Fire" | Weapon == "Knife" |
+                     Weapon == "Poison" | Weapon == "Strangulation" | Weapon == "Suffocation")
 
 # Two-Way Table: Non-Firearm Weapon by Perpetrator Sex #
 table(nonfirearm$Weapon, nonfirearm$Perpetrator.Sex)
