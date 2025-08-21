@@ -50,15 +50,15 @@ Only the following non-firearm weapons were **included**:
 
 ### One-Way Table: Perpetrator Sex
 
-| Perpetrator Sex | Count  |
+| Perpetrator Sex  | Count  |
 |------------------|--------|
 | Female           | 4,808  |
 | Male             | 39,809 |
 | Unknown          | 18,916 |
 
-### One-Way Proportion Table: Perpetrator Sex
+### One-Way Proportio Table: Perpetrator Sex
 
-| Perpetrator Sex | Proportion |
+| Perpetrator Sex  | Count      |
 |------------------|------------|
 | Female           | 7.57%      |
 | Male             | 62.66%     |
