@@ -31,8 +31,9 @@ library(dplyr)
 library(tidyr)
 
 # Import and Explore Dataset #
+## Import
 homicide <- read_csv("homicide_sample.csv")
-# Quick Data Overview
+## Quick Data Overview
 str(homicide)
 head(homicide)
 
