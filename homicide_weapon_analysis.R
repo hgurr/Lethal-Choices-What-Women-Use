@@ -42,7 +42,6 @@ head(homicide)
 # Define Variables of Interest #
 # 1. "Perpetrator.Sex" - Sex of perpetrator
 # 2. "Weapon" - Type of weapon used
-# 3. "nonfirearm" - Subset of "Weapon" using only non-firearm weapons (filtered dataset frame)
 
 # One-Way Table: Perpetrator Sex #
 table(homicide$Perpetrator.Sex)
@@ -51,6 +50,7 @@ table(homicide$Perpetrator.Sex)
 prop.table(table(homicide$Perpetrator.Sex))
 
 # Filter Dataset Frame: Non-Firearm Weapons Only #
+# "nonfirearm" - Subset of "homicide_sample.csv" using only non-firearm weapons in "Weapon"
 nonfirearm <- filter(homicide, Weapon == "Blunt Object" | Weapon == "Drowning"| Weapon == "Drugs" | 
                      Weapon == "Explosives" | Weapon == "Fall" | Weapon == "Fire" | Weapon == "Knife" |
                      Weapon == "Poison" | Weapon == "Strangulation" | Weapon == "Suffocation")
