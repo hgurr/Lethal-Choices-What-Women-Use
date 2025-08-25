@@ -32,17 +32,33 @@ The analysis was conducted in R and focuses on summarizing categorical variables
   - `dplyr` for data manipulation
   - `tidyr` for data reshaping
 
-### Key Variables:
-- `Perpetrator.Sex`
-- `Weapon`
-- `nonfirearm` (created subset of `homicide_sample.csv`)
+### Key Variables
 
-### Filtering Criteria:
-To focus on non-firearm homicides, the dataset was filtered to **exclude**:
-- `Gun`, `Firearm`, `Handgun`, `Rifle`, `Shotgun`, `Unknown`
+| Variable Name       | Description                                                                 |
+|---------------------|-----------------------------------------------------------------------------|
+| `Perpetrator.Sex`   | Categorical variable indicating the sex of the perpetrator (`Male`, `Female`, or `Unknown`) |
+| `Weapon`            | Categorical variable indicating the type of weapon used in the homicide     |
 
-Only the following non-firearm weapons were **included**:
-- `Knife`, `Blunt Object`, `Poison`, `Fire`, `Drugs`, `Strangulation`, `Suffocation`, `Drowning`, `Explosives`, `Fall`
+---
+
+### Filtering Criteria
+
+To focus exclusively on **non-firearm homicides**, the dataset was filtered using the `Weapon` variable to exclude incidents involving firearms or unknown weapon types.
+
+The resulting filtered dataset is stored in a new data frame called **`nonfirearm`**, which includes only the following weapon types:
+
+- `Blunt Object`
+- `Drowning`
+- `Drugs`
+- `Explosives`
+- `Fall`
+- `Fire`
+- `Knife`
+- `Poison`
+- `Strangulation`  
+- `Suffocation`  
+
+This subset (`nonfirearm`) was used for all cross-tabulations and proportion analyses related to non-firearm weapon use by perpetrator sex.
 
 ---
 
